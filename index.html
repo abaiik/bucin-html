@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+        <meta name="description" content="FREE REST API">
+        <meta name="author" content="Abaiik API">
+        <title>Unknown</title>
+        <meta property="og:site_name" name="og:site_name" content="Abaiik REST API">
+        <meta property="og:title" name="og:title" content="Abaiik - REST API">
+        <meta property="og:url" name="og:url" content="https://Abaiik.github.io/">
+        <meta property="og:image" name="og:image" content="assets/favicon-16x16.png" />
+        <meta property="og:description" name="og:description" content="FREE REST API">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.ico" />
+        <link rel="manifest" href="assets/site.webmanifest" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap">
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    </head>
+    
+    <body onload="init()">
+        <audio id="myAudio">
+            <source src="assets/music.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="myOpening">
+            <source src="assets/opening.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+        </audio>
+        <div class="preload">SEBENTAR YA</div>
+        <div class="vidcont">
+            <div class="divvideo">
+                <video id="myVideo" width="100%" height="100%">
+                    <source src="assets/video.mp4" type="video/mp4" />
+                    Your browser doe`s not support HTML5 video.
+                </video>
+            </div>
+        </div>
+        <style>
+            body {
+              background-image: url("assets/wallpaper.jpg");
+            }
+        </style>
+        <div class="container">
+            <div class="myclock">
+                <div class="kontol">
+                <div class="myakun reset" onclick="reverse()">Reset</div>
+                <div class="myakun" onclick="toggleFullscreen()">Fullscreen</div>
+                </div>
+                <div class="contjam">
+                    <div class="jam">-:-</div>
+                    <div class="tanggal">-</div>
+                    <div class="ucapan" onclick="carigoogle()">Ketuk disini untuk memberikan pesan</div>
+                </div>
+            </div>
+            <div class="mywindow" id="myform">
+                <div class="mycontrol">
+                    <div class="myclose"></div>
+                    <div class="mymini"></div>
+                    <div class="mymax"></div>
+                </div>
+                <div class="myheader">
+                  COMPOSING
+                </div>
+                <div class="mybody">
+                    <div class="mytitle">
+                        ISI NAMAMU DI BAWAH INI
+                    </div>
+                    <div class="mycontent">
+                        <input class="mytext form-control" type="text" id="mynama" name="nama" placeholder="User Name" required="required" required autofocus />
+                    </div>
+                    <div class="mybutton">
+                      <div class="mybuttonyes" style="cursor:pointer" onclick="mywrite()">Lanjut</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mywindow myanimated myhide" id="mywindow">
+                <div class="mycontrol">
+                    <div class="myclose" onclick="reverse()"></div>
+                    <div class="mymini"></div>
+                    <div class="mymax"></div>
+                </div>
+                <div class="myheader" id="mywindowheader">Halo <span id="spannama"></span></div>
+                <div class="mybody">
+                    <div class="mytitle">
+                        Hai...
+                    </div>
+                    <div class="mycontent">
+                        Aku Abaiik, pasti kamu suka sama aku yakan? iya ga? Jawab iya / tidak
+                    </div>
+                    <div class="mybutton">
+                        <div class="mybuttonno" style="cursor:pointer" onmouseover="move()" onclick="move2()">TIDAK</div>
+                        <div class="mybuttonyes" style="cursor:pointer" onclick="playVid()">IYA</div>
+                    </div>
+                </div>
+                <div class="myresize"></div>
+            </div>
+        </div>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/index.min.js"></script>
+    </body>
+</html>
